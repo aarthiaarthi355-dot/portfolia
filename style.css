@@ -1,0 +1,483 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    height: auto;
+    width: 100%;
+    background: linear-gradient(blue, black);
+    border-radius: 20px;
+    position: relative;
+    top: 0px;
+}
+
+.myphoto {
+    height: 300px;
+    width: 200px;
+    border-radius: 20px;
+    padding: 100px;
+}
+
+#photo {
+    height: 260px;
+    width: 220px;
+    border-radius: 20px;
+}
+
+#home {
+    height: 250px;
+    width: 430px;
+    margin-left: 450px;
+    margin-top: -150px;
+    background-color: transparent;
+    /* box-shadow: 0px 0px 10px black; */
+    color: white;
+}
+
+#home:hover {
+    transform: rotate3d(-50%);
+    box-shadow: 0px 0px 10px black;
+}
+
+h2:hover {
+    color: purple;
+}
+
+h1:hover {
+    color: purple;
+}
+
+h1,
+h2 {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+#nav {
+    margin-top: 10px;
+    position: fixed;
+    width: 89%;
+    border: 2px solid purple;
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow: 0px 0px 10px black;
+}
+
+#a {
+    margin-left: 100px;
+}
+
+#a:hover {
+    color: purple;
+}
+
+#skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px;
+
+
+}
+
+.skill {
+    height: 200px;
+    width: 260px;
+    border: 1px solid black;
+    margin-left: 40px;
+    animation-name: launch;
+    animation-duration: 5s;
+}
+
+.skill:hover {
+    transform: scale(0.9);
+}
+
+.skill:hover {
+    background-color: blue;
+    border-radius: 20px;
+}
+
+img {
+    margin-top: 10px;
+    height: 180px;
+    width: 230px;
+}
+
+.backend {
+    display: flex;
+    height: 300px;
+    width: 100%;
+    margin-top: 150px;
+    justify-content: center;
+}
+
+#about {
+    height: 300px;
+    width: 80%;
+    border: 1px solid black;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+#project {
+    height: 200px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+#project:hover {
+    transform: rotateY(180deg);
+}
+
+.pro {
+    height: 200px;
+    width: 250px;
+    margin-left: 30px;
+    border: 1px solid black;
+
+}
+
+
+#Education {
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.education {
+    padding: 40px;
+    background: #111;
+    color: white;
+}
+
+.education h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.edu-box {
+    /* background:#1e1e1e; */
+    padding: 10px;
+    border-left: 5px solid blue;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.edu-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px blue;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-decoration: overline;
+}
+
+h2 {
+    /* color: white; */
+}
+
+p {
+    margin-left: 30px;
+    color: white;
+}
+
+span {
+    margin-left: 30px;
+    color: white;
+}
+
+.circle1 {
+
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin-left: 200px;
+    float: left;
+
+    background:
+        conic-gradient(blue 0% 86%,
+            #eee 75% 100%);
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.circle2 {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin-left: 20px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        conic-gradient(blue 0% 66%,
+            #eee 55% 100%);
+}
+
+.circle3 {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin-left: 20px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        conic-gradient(blue 0% 75%,
+            #eee 75% 100%);
+}
+
+.circle:hover {
+    box-shadow:
+        inset 5px 5px 10px #bbb,
+        inset -5px -5px 10px white;
+}
+
+h5 {
+    font-size: 100px;
+
+}
+
+#contact {
+    height: 300px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.divc {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid white;
+    display: flex;
+
+}
+
+h2 p {
+    margin-top: 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 100%;
+        border-radius: 0;
+        overflow-x: hidden;
+    }
+
+    /* NAVBAR */
+
+    #nav {
+        width: 100%;
+        left: 0;
+        top: 0;
+        border-radius: 0;
+        padding: 10px;
+    }
+
+    #a {
+        margin-left: 0 !important;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 10px 0;
+    }
+
+    /* HOME SECTION */
+
+    #Home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 120px;
+    }
+
+    .myphoto {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #photo {
+        width: 220px;
+        height: 260px;
+    }
+
+    #home {
+        width: 95%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* ABOUT */
+
+    #about {
+        width: 95%;
+        height: auto;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    #about img {
+        width: 220px;
+        height: auto;
+        display: block;
+        margin: auto !important;
+    }
+
+    #about div:last-child {
+        width: 100% !important;
+        height: auto !important;
+        margin-left: 0 !important;
+        margin-top: 20px !important;
+        text-align: center;
+    }
+
+    /* PROJECT */
+
+    #project {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .pro {
+        width: 90%;
+        margin: 15px 0;
+    }
+
+    .projectimg {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* SKILLS */
+
+    #skills,
+    .backend {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .skill {
+        width: 90%;
+        margin: 15px 0;
+    }
+
+    .images {
+        width: 100%;
+        height: 180px;
+    }
+
+    /* EDUCATION */
+
+    #Education {
+        padding: 10px;
+    }
+
+    .edu-box {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    /* PERCENTAGE CIRCLES */
+
+    .div1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .circle1,
+    .circle2,
+    .circle3 {
+        width: 180px;
+        height: 180px;
+        margin-left: 0;
+        float: none;
+    }
+
+    h5 {
+        font-size: 50px;
+    }
+
+    /* CONTACT */
+
+    .icons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .divc {
+        width: 90px;
+        height: 90px;
+    }
+
+    .divc i {
+        font-size: 35px !important;
+        margin-left: 27px !important;
+        margin-top: 27px !important;
+    }
+
+    /* TEXT */
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-left: 0;
+    }
+
+    p {
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    span {
+        margin-left: 0;
+    }
+}
