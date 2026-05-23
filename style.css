@@ -7,12 +7,30 @@
 .container {
     height: auto;
     width: 100%;
-    background: linear-gradient(blue, black);
+    background: linear-gradient(black, blue);
     border-radius: 20px;
     position: relative;
     top: 0px;
+    cursor:progress;
 }
 
+.girlpng {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
 .myphoto {
     height: 300px;
     width: 200px;
@@ -31,6 +49,7 @@
     width: 430px;
     margin-left: 450px;
     margin-top: -150px;
+    padding: 20px;
     background-color: transparent;
     /* box-shadow: 0px 0px 10px black; */
     color: white;
@@ -38,7 +57,7 @@
 
 #home:hover {
     transform: rotate3d(-50%);
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 10px blue;
 }
 
 h2:hover {
@@ -63,6 +82,7 @@ h2 {
     border-radius: 20px;
     background-color: transparent;
     box-shadow: 0px 0px 10px black;
+    background-color: blue;
 }
 
 #a {
@@ -88,7 +108,6 @@ h2 {
 .skill {
     height: 200px;
     width: 260px;
-    border: 1px solid black;
     margin-left: 40px;
     animation-name: launch;
     animation-duration: 5s;
@@ -123,11 +142,13 @@ img {
     border: 1px solid black;
     margin-top: 30px;
     margin-left: 100px;
+
 }
 
 #project {
     height: 200px;
     width: 100%;
+    padding: 30px;
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -271,6 +292,7 @@ h5 {
     border-radius: 50%;
     background-color: transparent;
     border: 2px solid white;
+    background-color: black;
     display: flex;
 
 }
@@ -480,4 +502,22 @@ h2 p {
     span {
         margin-left: 0;
     }
+    
+.girlpng {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
 }
